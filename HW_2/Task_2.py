@@ -9,5 +9,6 @@ def list_of_sequence_numbers(n):
     print(f'n = {n} -> {summ}')
     return sum(summ)
 
+
 n = int(input('\nВведите число для последовательности: '))
 print(f'Сумма: {round(list_of_sequence_numbers(n), 2)}')
