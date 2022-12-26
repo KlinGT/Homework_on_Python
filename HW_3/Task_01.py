@@ -11,4 +11,3 @@ for i in range(1, len(my_list), 2):
     summ += my_list[i]
 
 print(f'{my_list} -> на нечётных позициях элементы {my_list [1::2]} ответ: {summ}')
-
