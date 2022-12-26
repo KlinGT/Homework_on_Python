@@ -3,8 +3,8 @@
 # Пример:
 # [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-my = input('\nВведите числа списка через пробел: ').split()
-my_list = [int(item) for item in my]
+values = input('\nВведите числа списка через пробел: ').split()
+my_list = [int(item) for item in values]
 
 summ = 0
 for i in range(1, len(my_list), 2):
