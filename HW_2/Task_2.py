@@ -4,11 +4,22 @@
 # Для n=4 -> [2, 2.25, 2.37, 2.44]
 # Сумма 9.06
 
-def list_of_sequence_numbers(n):
-    summ = [((1 + 1/i)**i) for i in range(1, n + 1)]
-    print(f'n = {n} -> {summ}')
-    return sum(summ)
+# def list_of_sequence_numbers(n):
+#     summ = [((1 + 1/i)**i) for i in range(1, n + 1)]
+#     print(f'n = {n} -> {summ}')
+#     return sum(summ)
+#
+#
+# n = int(input('\nВведите число для последовательности: '))
+# print(f'Сумма: {round(list_of_sequence_numbers(n), 2)}')
 
+# ВАРИАНТ ПРЕПОДА:
 
-n = int(input('\nВведите число для последовательности: '))
-print(f'Сумма: {round(list_of_sequence_numbers(n), 2)}')
+n = int(input('\nВведите целое число: '))
+
+new_list = []
+for i in range(1, n + 1):
+    new_list.append(round((1 + 1 / i) ** i, 2))
+
+print(*new_list, sep=', ')
+print(sum(new_list))
