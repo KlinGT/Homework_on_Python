@@ -4,15 +4,27 @@
 # 6782 -> 23
 # 0,56 -> 11
 
-def sum_of_digits(number):
-    while number != int(number):
-        number *= 10
-    summa = 0
-    while number > 0:
-        summa += number % 10
-        number //= 10
-    print(f'Сумма: -> {int(summa)}')
+# def sum_of_digits(number):
+#     while number != int(number):
+#         number *= 10
+#     summa = 0
+#     while number > 0:
+#         summa += number % 10
+#         number //= 10
+#     print(f'Сумма: -> {int(summa)}')
+#
+#
+# number = float(input("\nВведите вещественное число: "))
+# sum_of_digits(number)
 
 
-number = float(input("\nВведите вещественное число: "))
-sum_of_digits(number)
+# ВАРИАНТ ПРЕПОДОВАТЕЛЯ:
+
+number = input('\nВведите вещественное число: ')
+
+summa_ = 0
+for digit in number:
+    if digit.isdigit():
+        summa_ += int(digit)
+
+print(summa_)
